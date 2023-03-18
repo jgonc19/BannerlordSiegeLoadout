@@ -47,7 +47,7 @@ namespace SiegeLoadout
                 equipment.Add(extended.SiegeEquipment);
             }
             equipment.Add(__instance.HeroObject.CivilianEquipment);
-            __result = equipment.GetReadOnlyList();
+            __result = equipment.ToMBList(); //Change for 1.1.0
             return false;
         }
 
